@@ -5,4 +5,28 @@ body {
 .jumbotron {
   background-color: #024B7F;
   color: #0396FF;
+  text-align: center;
+  border-style: double;
+  border-color: #012540;
+  border-width: 80px;
+}
+
+#paris {
+  display: none;
+}
+
+#mexico {
+  display: none;
+}
+
+#yellowstone {
+  display: none;
+}
+
+#aspen {
+  display: none;
+}
+
+#stumped {
+  display: none;
 }
