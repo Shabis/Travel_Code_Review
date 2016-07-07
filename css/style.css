@@ -1,5 +1,7 @@
-body {
-  background-color: #0489E8;
+.picture_answer {
+  width: 200px;
+  height: 200px;
+  float: right;
 }
 
 .jumbotron {
@@ -9,6 +11,20 @@ body {
   border-style: double;
   border-color: #012540;
   border-width: 80px;
+}
+
+body {
+  background-color: #0489E8;
+}
+
+.row {
+  border-style: groove;
+  text-align: center;
+  margin: 12px;
+  padding-left: : 6px;
+  padding-right: 6px;
+  padding-bottom: 20px;
+  border-width: 10px;
 }
 
 #paris {
@@ -29,4 +45,14 @@ body {
 
 #stumped {
   display: none;
+}
+
+h2 {
+  color: #012540;
+}
+
+.lamp {
+  width: 300px;
+  height: auto;
+  float: right;
 }

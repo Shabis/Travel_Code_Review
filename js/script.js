@@ -1,27 +1,26 @@
 $(document).ready(function() {
-
-
-  $('#blanks form').submit(function(event) {
+  $("form#travel").submit(function(event) {
+    $('form#travel').hide();
     event.preventDefault();
-    var typeInput = $('input#type').val();
-    var beverageInput = $("input#beverage").val();
-    var foodInput = $("input#food").val();
-    var entertainmentInput = $("input#entertainment").val();
-    var weatherInput = $("input#weather").val();
+    var citytype = $("input:radio[name=citytype]:checked").val();
+    var beverage = $("input:radio[name=beverage]:checked").val();
+    var food = $("input:radio[name=food]:checked").val();
+    var entertainment = $("input:radio[name=entertainment]:checked").val();
+    var travel = $("input:radio[name=travel]:checked").val();
 
-    if (typeInput === 'beach' && beverageInput === 'cocktails'|| foodInput === 'cheeseburger' && weatherInput === '90s') {
-      $('#mexico').show();
+    if (citytype === "beach" & travel === 'cruise' || food ==='nachos' && beverage === 'beer') {
+        $('#mexico').show();
     }
-    else if (entertainmentInput === 'hiking') {
-      $('#yellowstone').show();
-    }
-    else if (weatherInput === 'freezing') {
+    else if (citytype === 'hiking' && travel === 'airplane' || food ==='cheese' && beverage === 'wine') {
       $('#aspen').show();
     }
-    else if (foodInput === 'pasta') {
+    else if (citytype === "hiking" && travel === 'train' || entertainment === 'walk' && beverage === 'water' ) {
+      $('#yellowstone').show();
+    }
+    else if (entertainment === 'shopping' && travel === 'airplane' || citytype ==='history' && beverage === 'wine') {
       $('#paris').show();
     } else {
       $('#stumped').show();
-    }
+    };
   });
 });

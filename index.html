@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <script src="js/jquery.js"></script>
-    <script src="js/script.js"></script>
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
     <link href="css/style.css" rel="stylesheet" type="text/css" media="all">
+    <script src="js/jquery.js"></script>
+    <script src="js/script.js"></script>
     <meta charset="utf-8">
     <title>Travel Genie</title>
   </head>
@@ -12,48 +12,132 @@
     <div class="jumbotron">
       <img src="img/genie.png" alt="blue genie">
       <h1>Meet Soren, Our Travel Genie</h1>
-      <h3>Answer a few short questions and Soren with grant you travels to your ultimate destination.</h3>
+      <h3>Answer the following questions and Soren with grant you travels to your ultimate destination.</h3>
     </div>
     <div class="container">
-      <div id="blanks">
-        <form>
-          <div class="form-group">
-            <label for="type">What type of destination do you most prefer? (beach, city, outdoors or tour)</label>
-            <input id="type" class="form-control" type="text">
-
-            <label for="beverage">What is your beverage of choice? (beer, champagne, water, soda, wine or cocktails)</label>
-            <input id="beverage" class="form-control" type="text">
-
-            <label for="food">What sounds like your ideal meal? (steak and potatoes, cheese and fruit, cheeseburger, or pasta)</label>
-            <input id="food" class="form-control" type="text">
-
-            <label for="entertainment">How would you like to spend your day? (Shopping, sunbathing, sightseeing or hiking)</label>
-            <input id="entertainment" class="form-control" type="text">
-
-            <label for="weather">What would you call ideal weather? (90s, 80s, 70s, freezing)</label>
-            <input id="weather" class="form-control" type="text">
+      <form id="travel">
+        <div class="row">
+          <h3>Which location looks the most appealing?</h3>
+          <div class="col-xs-6 col-sm-3">
+            <input type="radio" name="citytype" value="beach">
+            <img src="img/beach.jpg" class="picture_answer" id="beach" alt="beach scene">
           </div>
-          <button type="submit" class="btn">Click here for your ultimate destination!</button>
-        </form>
-      </div>
+          <div class="col-xs-6 col-sm-3">
+            <input type="radio" name="citytype" value="history">
+            <img src="img/history.jpg" class="picture_answer" id="history" alt="pyramids">
+          </div>
+          <div class="col-xs-6 col-sm-3">
+            <input type="radio" name="citytype" value="hiking">
+            <img src="img/hiking.jpg" class="picture_answer" id="hiking" alt="outdoors">
+          </div>
+          <div class="col-xs-6 col-sm-3">
+            <input type="radio" name="citytype" value="city">
+            <img src="img/city.jpg" class="picture_answer" id="city" alt="metropolis">
+          </div>
+        </div>
 
+        <div class="row">
+          <h3>What is your beverage of choice?</h3>
+          <div class="col-xs-6 col-sm-3">
+            <input type="radio" name="beverage" value="beer">
+            <img src="img/beer.jpg" class="picture_answer" id="beer" alt="beer">
+          </div>
+          <div class="col-xs-6 col-sm-3">
+            <input type="radio" name="beverage" value="champagne">
+            <img src="img/champagne.jpg" class="picture_answer" id="champagne" alt="champagne">
+          </div>
+          <div class="col-xs-6 col-sm-3">
+            <input type="radio" name="beverage" value="water">
+            <img src="img/water.jpg" class="picture_answer" id="water" alt="water">
+          </div>
+          <div class="col-xs-6 col-sm-3">
+            <input type="radio" name="beverage" value="wine">
+            <img src="img/wine.jpg" class="picture_answer" id="wine" alt="wine">
+          </div>
+        </div>
 
+        <div class="row">
+          <h3>Choose a food</h3>
+          <div class="col-xs-6 col-sm-3">
+            <input type="radio" name="food" value="steak">
+            <img src="img/steak.jpg" class="picture_answer" id="steak" alt="steak">
+          </div>
+          <div class="col-xs-6 col-sm-3">
+            <input type="radio" name="food" value="cheese">
+            <img src="img/cheese.jpg" class="picture_answer" id="cheese" alt="cheese">
+          </div>
+          <div class="col-xs-6 col-sm-3">
+            <input type="radio" name="food" value="wrap">
+            <img src="img/wrap.jpg" class="picture_answer" id="wrap" alt="wrap">
+          </div>
+          <div class="col-xs-6 col-sm-3">
+            <input type="radio" name="food" value="nachos">
+            <img src="img/nachos.jpg" class="picture_answer" id="nachos" alt="nachos">
+          </div>
+        </div>
+
+        <div class="row">
+          <h3>What would you prefer to be doing?</h3>
+          <div class="col-xs-6 col-sm-3">
+              <input type="radio" name="entertainment" value="movie">
+              <img src="img/movie.jpg" class="picture_answer" id="movie" alt="movie">
+          </div>
+          <div class="col-xs-6 col-sm-3">
+            <input type="radio" name="entertainment" value="walk">
+            <img src="img/walk.jpg" class="picture_answer" id="walk" alt="walk">
+          </div>
+          <div class="col-xs-6 col-sm-3">
+            <input type="radio" name="entertainment" value="shopping">
+            <img src="img/shopping.jpg" class="picture_answer" id="shopping" alt="shopping">
+          </div>
+          <div class="col-xs-6 col-sm-3">
+            <input type="radio" name="entertainment" value="relax">
+            <img src="img/relax.jpg" class="picture_answer" id="relax" alt="relax">
+          </div>
+        </div>
+
+        <div class="row">
+          <h3>How would you like to get to your destination</h3>
+          <div class="col-xs-6 col-sm-3">
+              <input type="radio" name="travel" value="cruise">
+              <img src="img/cruise.jpg" class="picture_answer" id="cruise" alt="cruise ship">
+          </div>
+          <div class="col-xs-6 col-sm-3">
+            <input type="radio" name="travel" value="train">
+            <img src="img/train.jpg" class="picture_answer" id="train" alt="train">
+          </div>
+          <div class="col-xs-6 col-sm-3">
+            <input type="radio" name="travel" value="car">
+            <img src="img/car.jpg" class="picture_answer" id="car" alt="car">
+          </div>
+          <div class="col-xs-6 col-sm-3">
+            <input type="radio" name="travel" value="airplane">
+            <img src="img/airplane.jpg" class="picture_answer" id="airplane" alt="airplane">
+          </div>
+        </div>
+        <button type="submit" class="btn">Show me my Destination!</button>
+      </form>
 
       <div id="paris">
-        <p>Soren will now take you to...Paris! A beautiful city filled with great food and culture.</p>
+        <h2>Soren will now take you to...Paris! A beautiful city filled with great food and culture.</h2>
+        <img src="img/lamp.png" class="lamp" alt="lamp">
       </div>
       <div id="mexico">
-        <p>Soren will now take you to...Mexico! With amazing crystal blue waters, you will enjoy your time soaking up the sun with a delicious cocktail.</p>
+        <h2>Soren will now take you to...Mexico! With amazing crystal blue waters, you will enjoy your time soaking up the sun with a delicious cocktail.</h2>
+        <img src="img/lamp.png" class="lamp" alt="lamp">
       </div>
       <div id="yellowstone">
-        <p>Soren will now take you to...Yellowstone National Park! With extrodanary views of nature, you will enjoy your day hiking and emersing your self in mother nature's most wonderful gifts!</p>
+        <h2>Soren will now take you to...Yellowstone National Park! With extraordinary views of nature, you will enjoy your day hiking and immersing yourself in mother nature's most wonderful gifts!</h2>
+        <img src="img/lamp.png" class="lamp" alt="lamp">
       </div>
       <div id="aspen">
-        <p>Soren will now take you to...Aspen! Grap your skis and poles, because we will be hitting the slopes!</p>
+        <h2>Soren will now take you to...Aspen! Grab your skis and poles, because we will be hitting the slopes!</h2>
+        <img src="img/lamp.png" class="lamp" alt="lamp">
       </div>
       <div id="stumped">
-        <p>With my immense knowledge and expertese, I believe I will take you to...no where. Well this is a first. I am truely stumped. I think you better try asking the next gennie you meet. He may have better insight into your personality.</p>
+        <h2>With my immense knowledge and expertise, I believe I will take you to...no where. Well this is a first. I am truly stumped. I think you better try asking the next genie you meet. He may have better insight into your personality.</h2>
+        <img src="img/lamp.png" class="lamp" alt="lamp">
       </div>
-    </div> <!--closes container-->
+    </div>
   </body>
 </html>
