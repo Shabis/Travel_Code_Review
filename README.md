@@ -4,7 +4,7 @@ In this project I have created a travel genie to predict travel destinations bas
 
 ### Setup/Installation Instructions
 
-You can view this project from my gh-pages website at xxxxxxx
+You can view this project from my gh-pages website at http://shabis.github.io/Travel_Code_Review/
 
 ### Known Bugs
 
@@ -25,9 +25,5 @@ In this project I used Html, CSS for styling, GitHub, Bootstrap, Atom, JavaScrip
 * [Grocery List](https://github.com/Shabis/Grocery_List.git)
 * [Portfolio2](https://github.com/Shabis/Portfolio2.git)
 * [Triangle](https://github.com/Shabis/Triangle.git)
-
-### License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
 Copyright (c) 2016 **_Shelby Clayton_**
